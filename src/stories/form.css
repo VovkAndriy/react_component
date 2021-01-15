@@ -1,0 +1,73 @@
+.storybook-form {
+  background-color: #30444e;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 19px ;
+  width: 320px;
+  height: 800px;
+  justify-content: center;
+}
+
+.storybook-form-address {
+  display: flex;
+  justify-content: space-between;
+}
+.storybook-form-title {
+  color: #96a7af;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.storybook-form-input{
+    background-color: #1F2E35;
+    padding: 15px 12px;
+    border-radius: 12px;
+    border: none;
+    color:#96A7AF;
+    outline: none;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 10px 0;
+}
+
+.storybook-form-input-address{
+    width: 40%;
+}
+
+.storybook-form-btn{
+    border-radius: 12px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 18px 0;
+    margin-top: 10px;
+}
+
+.storybook-form-addresText{
+    color: #96A7AF;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.storybook-form-addresText-name{
+    font-weight: 500;
+}
+
+.storybook-form-addresInfo{
+    background-color: #2A3C44;
+    padding: 15px 22px;
+    border-radius: 8px;
+}
+
+.storybook-form-addres-edit{
+    color:#DB3022;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.storybook-form-addresInfo-head{
+    display: flex;
+    justify-content: space-between;
+}
