@@ -71,3 +71,22 @@
     display: flex;
     justify-content: space-between;
 }
+
+.storybook-form-phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.storybook-form-countryPicker{
+    height: 48px;
+    border-radius: 12px;
+    background-color: #286053;
+    width: 25%;
+    font-size: 16px;
+    color:#3DD598;
+    justify-content: center;
+    line-height: 48px;
+    padding: 0 12px;
+}
+

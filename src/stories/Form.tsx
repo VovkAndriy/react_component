@@ -2,6 +2,8 @@ import React from "react";
 import { InputField } from "./InputField";
 import "./form.css";
 import { Button } from "./Button";
+import Select from "react-select";
+
 export interface FormProps {
   addressInfo: null | {
     name: string;
@@ -18,7 +20,7 @@ const testAddress = {
   city: "Chino Hills",
 };
 
-export const Form: React.FC<FormProps> = ({ addressInfo}) => {
+export const Form: React.FC<FormProps> = ({ addressInfo }) => {
   return (
     <div className={["storybook-form"].join(" ")}>
       <h1 className={"storybook-form-title"}>Delivery address:</h1>
@@ -79,7 +81,11 @@ export const Form: React.FC<FormProps> = ({ addressInfo}) => {
             placeholder="Location Details ( apartment / house number )"
             className={"storybook-form-input"}
           />
-          <div>
+          <div className={"storybook-form-phone"}>
+            <div className={"storybook-form-countryPicker"}>
+              <span style={{marginRight:10}}> 🇳🇱 </span>
+              <span> +31 </span>
+            </div>
             <input
               type="phone"
               placeholder="20 8662 613"
