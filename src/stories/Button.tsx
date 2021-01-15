@@ -1,6 +1,7 @@
 import React from "react";
 import "./button.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLongArrowAltRight} from "@fortawesome/free-solid-svg-icons";
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
@@ -23,6 +24,7 @@ export interface ButtonProps {
    */
   onClick?: () => void;
   customStyle?: string | string[];
+  arrow?: boolean;
 }
 
 /**
@@ -34,6 +36,7 @@ export const Button: React.FC<ButtonProps> = ({
   backgroundColor,
   label,
   customStyle,
+  arrow,
   ...props
 }) => {
   const mode = primary
@@ -51,7 +54,7 @@ export const Button: React.FC<ButtonProps> = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {label} {<FontAwesomeIcon icon={faLongArrowAltRight} />}
     </button>
   );
 };

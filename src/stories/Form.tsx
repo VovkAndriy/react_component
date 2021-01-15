@@ -1,8 +1,8 @@
 import React from "react";
-import { InputField } from "./InputField";
 import "./form.css";
 import { Button } from "./Button";
-import Select from "react-select";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 export interface FormProps {
   addressInfo: null | {
@@ -78,13 +78,14 @@ export const Form: React.FC<FormProps> = ({ addressInfo }) => {
           </div>
           <input
             type="text"
-            placeholder="Location Details ( apartment / house number )"
+            placeholder='Location Details ( apartment / house number )'
             className={"storybook-form-input"}
           />
           <div className={"storybook-form-phone"}>
             <div className={"storybook-form-countryPicker"}>
-              <span style={{marginRight:10}}> 🇳🇱 </span>
-              <span> +31 </span>
+              <span style={{marginRight:10}}>🇳🇱</span>
+              <span>+31</span>
+              <FontAwesomeIcon icon={faAngleDown} />
             </div>
             <input
               type="phone"
